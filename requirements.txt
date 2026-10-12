@@ -1,0 +1,13 @@
+# storage_checker.py uses only Python's standard library — no pip
+# packages required at all.
+#
+# It calls these external command-line tools where available (each is
+# checked at runtime; missing tools just mean that one sub-check is
+# skipped, not a crash):
+#
+#   dpkg / apt    — already on every Debian/Kali system, used for package
+#                    and dependency checks
+#   ldd           — already on every Linux system, used for the missing
+#                    shared-library check
+#
+# Nothing here needs to be installed separately on Kali Linux.
